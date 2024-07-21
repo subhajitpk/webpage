@@ -51,7 +51,7 @@
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    gap: 15px; /* Add gap between icons */
+    gap: 10px; /* Add gap between icons */
 }
 
 .icon {
@@ -501,4 +501,28 @@ iframe {
     margin: 0;
     color: white;
     font-size: 18px; /* Increased font size to 18px */
+  }
+
+  /* Back to top */
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    display: none;
+  }
+  
+  .back-to-top button {
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .back-to-top button:hover {
+    background-color: #555;
   }
