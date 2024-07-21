@@ -33,10 +33,29 @@
 .align-items-center {
   align-items: center;
 }
+
+
 </style>
 
 
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script>
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      const backToTopButton = document.getElementById("backToTopBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    }
+    
+    function backToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
 </head>
 <body class="w3-light-grey">
 
@@ -204,7 +223,7 @@
           <p></p>
           <p><ul>
                 <li><strong>Thesis Title</strong> :  Distributed Algorithms to Solve MIS Filling, Mutual Visibility and Uniform Partitioning with Luminous Mobile Robots</li>
-                <li><strong>Submitted on</strong> : 24th May, 2024 (Degree anticipated in approximately  three months)</li>
+                <li><strong>Submitted on</strong> : 24th May, 2024 (degree anticipated in approximately  three months)</li>
                 
               </ul>
           </p>
@@ -239,7 +258,7 @@
                   Subhajit Pramanick, Sai Vamshi Samala, Debasish Pattanayak, and Partha Sarathi Mandal. <a href="https://www.sciencedirect.com/science/article/pii/S0304397523005005" style="color: teal; text-decoration: italic;"><em> Distributed Algorithms for Filling MIS Vertices of an Arbitrary Graph by Myopic Luminous Robots</em></a>. Theoretical Computer Science (Elsevier), Vol. 978, 2023.
               </div>
               <div class="publication-box">
-                  Subhajit Pramanick, Saswata Jana, Adri Bhattacharya and Partha Sarathi Mandal. <a href="https://doi.org/10.1016/j.tcs.2024.114723" style="color: teal; text-decoration: italic;"><em> Mutual Visibility of Luminous Robots Despite Angular Inaccuracy</em></a>. Accepted (To appear) to Theoretical Computer Science (Elsevier), 2024.
+                  Subhajit Pramanick, Saswata Jana, Adri Bhattacharya and Partha Sarathi Mandal. <a href="https://doi.org/10.1016/j.tcs.2024.114723" style="color: teal; text-decoration: italic;"><em> Mutual Visibility of Luminous Robots Despite Angular Inaccuracy</em></a>. Theoretical Computer Science (Elsevier), Vol 1011, 2024.
               </div>
           </div>
           <div class="publication-container">
@@ -316,12 +335,16 @@
         
       </div>
 
+      
+
     <!-- End Right Column -->
     </div>
     
   <!-- End Grid -->
   </div>
-  
+  <div class="back-to-top" id="backToTopBtn">
+    <button onclick="backToTop()"><i class="fa fa-arrow-up"></i></button>
+  </div>
   <!-- End Page Container -->
 </div>
 
