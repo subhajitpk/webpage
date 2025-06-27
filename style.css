@@ -527,3 +527,111 @@ iframe {
   .back-to-top button:hover {
     background-color: #555;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+ .mobile-fallback {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .mobile-fallback {
+      display: block;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: url('mountain.jpg') no-repeat center center;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+  
+
+ /* === GLOBAL FIXES === */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  width: 100% !important;
+  height: auto;
+}
+
+/* === RESPONSIVE ADJUSTMENTS === */
+
+@media screen and (max-width: 768px) {
+  /* Navigation Menu */
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .navbar a {
+    flex: 1 1 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /* Responsive grid columns */
+  .w3-third,
+  .w3-twothird {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  /* Background video hidden on small devices */
+  .video-background {
+    display: none !important;
+  }
+
+  /* Social icon wrapper fix */
+  .wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+
+  .icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon .tooltip {
+    font-size: 12px;
+    padding: 6px 10px;
+    top: -40px;
+  }
+
+  /* Fix map container height */
+  .map-container {
+    width: 100%;
+    height: 250px;
+  }
+
+  /* Padding adjustment for narrow screens */
+  body {
+    padding: 8px;
+  }
+}
