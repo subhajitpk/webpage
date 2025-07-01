@@ -316,8 +316,16 @@
               <a href="https://doi.org/10.1016/j.tcs.2024.114723" style="color: teal; text-decoration: italic; display: block; margin-bottom: 20px;">
                   <em>Mutual Visibility of Luminous Robots Despite Angular Inaccuracy</em>
               </a>
-              <br>Subhajit Pramanick, Saswata Jana, Adri Bhattacharya, and Partha Sarathi Mandal.<br><br>
+              <be>
+              <p>  Subhajit Pramanick, Saswata Jana, Adri Bhattacharya, and Partha Sarathi Mandal.<br><br>
               Theoretical Computer Science (Elsevier), Vol 1011, 2024.
+              </p>
+              <button class="abstract-toggle" onclick="toggleAbstract(this)">▼ Abstract</button>
+              <div class="abstract-text">
+                <p>
+                  We initiate the study of the <em>Mutual Visibility problem</em> using $N$ opaque luminous point robots that have inaccurate movements. Each robot operates in <em>Look-Compute-Move</em> cycles and has a persistent light attached to it to have a weak form of communication between robots using a constant number of colors. The inaccuracy for a robot $r$ is an angular deviation from its target point $T$ to a point $T'$ such that the angle $\angle TrT' <90^\circ$. The problem becomes unsolvable if this angle is $\geq 90^\circ$. From any initial configuration of the robots on the Euclidean plane, the problem aims to arrange the robots in a configuration such that any two robots are visible to each other. We assume that the robots agree on one coordinate axis. We present two collision-free algorithms, a $2$ color algorithm (which is optimal in the number of colors used) for semi-synchronous setting and a $3$ color algorithm for asynchronous setting, both of which run in $\mathcal{O}(N)$ epochs. We also study the problem in the presence of mobile faulty robots. A robot can exhibit both mobility failure and angular inaccuracies in its movement. We present a fault-tolerant algorithm that aims to bring the robots in a configuration where no three non-faulty robots are collinear, and no faulty robot lies between two non-faulty robots. This algorithm uses 10 colors and takes $\mathcal{O}(N)$ epochs under asynchronous settings.
+                </p>
+              </div>
             </div>
           
           </div>
