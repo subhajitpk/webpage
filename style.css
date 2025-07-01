@@ -635,3 +635,36 @@ iframe {
     padding: 8px;
   }
 }
+
+
+
+.abstract-toggle {
+  margin-top: 10px;
+  background-color: #f0f0f0;
+  color: teal;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.abstract-toggle:hover {
+  background-color: #e0e0e0;
+}
+
+.abstract-text {
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 10px;
+  background-color: #fafafa;
+  border-left: 4px solid teal;
+  font-size: 15px;
+  line-height: 1.5;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.abstract-text.show {
+  padding: 10px;
+}
