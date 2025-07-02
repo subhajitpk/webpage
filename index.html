@@ -233,9 +233,12 @@
       <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-info-circle fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About me</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>I have completed my PhD in <a href="https://www.iitg.ac.in/maths/" style="color: teal; text-decoration: bold;">Department of Mathematics</a>, Indian Institute of Technology Guwahati, under the supervision of <a href="https://fac.iitg.ac.in/psm/" style="color: teal; text-decoration: bold;">Prof. Partha Sarathi Mandal</a>. I am currently a visiting scientist at Indian Statistical Institute Kolkata and working with <a href="https://sites.google.com/site/mollaanisurrahaman/" style="color: teal; text-decoration: bold;">Dr. Anisur Rahaman Molla</a>. My research interests include Distributed algorithms, Algorithms designing for Mobile Robots (Swarm robots, Sensors, Unmanned aerial vehicles) and Wireless networks. However, I completed my graduation in mathematics from Scottish Church College, University of Calcutta and my M.Sc in Mathematics and Computing from IIT Guwahati but later found more interest in computer science and specifically in Distributed algorithms.</b></h5>
+          <h5 class="w3-opacity"><b>I obtained my B.Sc in Mathematics from the Scottish Church College, Kolkata, under the University of Calcutta in 2015. Later, I joined the Indian Institute of Technology (IIT) Guwahati and finished my M.Sc in Mathematics and Computing in 2017. I have completed my PhD in 2024 from the <a href="https://www.iitg.ac.in/maths/" style="color: teal; text-decoration: bold;">Department of Mathematics</a>, Indian Institute of Technology (IIT) Guwahati, under the supervision of <a href="https://fac.iitg.ac.in/psm/" style="color: teal; text-decoration: bold;">Prof. Partha Sarathi Mandal</a>. I am currently a visiting scientist at the Indian Statistical Institute, Kolkata and working with <a href="https://sites.google.com/site/mollaanisurrahaman/" style="color: teal; text-decoration: bold;">Dr. Anisur Rahaman Molla</a>. </b></h5>
           <hr>
 
+          <h5 class="w3-opacity"> <b>Research Interest</b>: Distributed algorithms for Swarm Robots, Mobile Agents, Fault-tolerance, Robot based Graph Algorithms.</h5>
+            <hr>
+            
           <h4 style="text-align: center;">You can find my Curriculum Vitae <a href="https://drive.google.com/file/d/1-UcL_i7zNy3Efd7Q--iokl1LUV_7Anvi/view?usp=drive_link" style="color: teal; text-decoration: bold;">here</a>.</h4>
           <br>
           <!-- <hr> -->
@@ -397,6 +400,16 @@
             </a>
             Subhajit Pramanick and Partha Sarathi Mandal. (Extended Abstract)<br>
             26th International Conference on Distributed Computing and Networking (<b>ICDCN</b> 2025), (ACM), Hyderabad, India, January 4-7, 2025.
+
+            <button class="abstract-toggle" onclick="toggleAbstract(this)">▼ Abstract</button>
+              <div class="abstract-text">
+                <p>
+                 We explore the power of luminous mobile robots on both discrete and continuous domains. 
+                For the discrete domain, we solve a problem named <em>MIS (maximal independent set) Filling</em> on a given connected graph. 
+                In the continuous domain, we solve the <em>Mutual Visibility problem</em> on the usual Euclidean plane. 
+                These problems are well motivated by real-world applications such as information dissemination in a network, pattern formation and many more.
+                We first discuss the MIS filling problem and then move to the Mutual Visibility problem.</p>
+              </div>
           </div>
         </div>
           
@@ -407,6 +420,12 @@
             </a>
             Subhajit Pramanick, Saswata Jana, Adri Bhattacharya, and Partha Sarathi Mandal.<br>
             25th International Conference on Distributed Computing and Networking (<b>ICDCN</b> 2024), (ACM), Chennai, India, January 4-7, 2024.
+
+            <button class="abstract-toggle" onclick="toggleAbstract(this)">▼ Abstract</button>
+              <div class="abstract-text">
+                <p>
+                 We are given $N$ autonomous mobile robots inside a bounded region. The robots are opaque which means that three collinear robots are unable to see each other as one of the robots acts as an obstruction for the other two. They operate in classical <em>Look-Compute-Move</em> (LCM) activation cycles. Moreover, the robots are oblivious except for a persistent light (which is why they are called <em>Luminous robots</em>) that can determine a color from a fixed color set. Obliviousness does not allow the robots to remember any information from past activation cycles. The Uniform Partitioning problem requires the robots to partition the whole region into sub-regions of equal area, each of which contains exactly one robot. Due to application-oriented motivation, we, in this paper consider the region to be well-known geometric shapes such as rectangle, square and circle. We investigate the problem in <em>asynchronous</em> setting where there is no notion of common time and any robot gets activated at any time with a fair assumption that every robot needs to get activated infinitely often. To the best of our knowledge, this is the first attempt to study the Uniform Partitioning problem using oblivious opaque robots working under asynchronous settings. We propose three algorithms considering three different regions: rectangle, square and circle. Robots partition the region in a distributed way and reach their respective positions in the partitions. The algorithms proposed for rectangular and square regions run in $O(N)$ epochs whereas the algorithm for circular regions runs in $O(N^2)$ epochs, where an epoch is the smallest unit of time in which all robots are activated at least once and execute their LCM cycles. </p>
+              </div>
           </div>
         </div>
 
@@ -417,6 +436,12 @@
             </a>
             Subhajit Pramanick, Saswata Jana, Adri Bhattacharya, and Partha Sarathi Mandal.<br>
             International Symposium on Algorithmics of Wireless Networks (<b>ALGOWIN</b>, formerly ALGOSENSORS), LNCS, volume 14061, September 4-8, 2023, Amsterdam, the Netherlands.
+
+            <button class="abstract-toggle" onclick="toggleAbstract(this)">▼ Abstract</button>
+              <div class="abstract-text">
+                <p>
+                 We initiate the study of the <em>Mutual Visibility problem</em> using $N$ opaque luminous point robots that have inaccurate movements. Each robot operates in <em>Look-Compute-Move</em> cycles and has a persistent light attached to it to have a weak form of communication between robots using a constant number of colors. The inaccuracy for a robot $r$ is an angular deviation from its target point $T$ to a point $T'$ such that the angle $\angle TrT' <90^\circ$. The problem becomes unsolvable if this angle is $\geq 90^\circ$. From any initial configuration of the robots on the Euclidean plane, the problem aims to arrange the robots in a configuration such that any two robots are visible to each other. We assume that the robots agree on one coordinate axis. We present two collision-free algorithms, a $2$ color algorithm (which is optimal in the number of colors used) for semi-synchronous setting and a $3$ color algorithm for asynchronous setting, both of which run in $\mathcal{O}(N)$ epochs. We also study the problem in the presence of mobile faulty robots. A robot can exhibit both mobility failure and angular inaccuracies in its movement. We present a fault-tolerant algorithm that aims to bring the robots in a configuration where no three non-faulty robots are collinear, and no faulty robot lies between two non-faulty robots. This algorithm uses $10$ colors and takes $\mathcal{O}(N)$ epochs under asynchronous settings.</p>
+              </div>
           </div>
         </div>
 
@@ -426,7 +451,14 @@
                 <em>Fault-tolerant Mutual Visibility for ASYNC Mobile Robots with Local Coordinate</em>
             </a>
             Subhajit Pramanick and Partha Sarathi Mandal.<br>
-            <br> <b>IEEE-GCON</b> 2023, (IEEE Xplore), IIT Guwahati, India, June 23-25, 2023.
+            <b>IEEE-GCON</b> 2023, (IEEE Xplore), IIT Guwahati, India, June 23-25, 2023.
+
+            <button class="abstract-toggle" onclick="toggleAbstract(this)">▼ Abstract</button>
+              <div class="abstract-text">
+                <p>
+                 We aim to solve the mutual visibility problem using $n$ autonomous, indistinguishable, homogeneous, oblivious and opaque point robots where the number of robots that can be faulty is at most one. The fault may occur anytime. The faulty robot cannot move from the time it becomes faulty. Initially from any arbitrary configuration, the problem of mutual visibility using robots aims to reach a configuration where any two robots can see each other. The challenge is to reach to such a configuration in presence of obstructed visibility where two robots see each other only if the line segment joining them does not have any robots. Every robot operates in the conventional <em>Look-Compute-Move</em> cycles. Robots have no agreement in their coordinate system.  
+                 We, in this paper,  propose a distributed asynchronous algorithm for mutual visibility in presence of at most one faulty robot where robots has no agreement on any global coordinate axes. </p>
+              </div>
           </div>
         </div>
 
@@ -437,6 +469,15 @@
               </a>
               Subhajit Pramanick, Sai Vamshi Samala, Debasish Pattanayak, and Partha Sarathi Mandal.<br>
               19th International Conference on Distributed Computing and Internet Technology (<b>ICDCIT 2023</b>), LNCS, volume 13776 (Springer-Verlag), Bhubaneswar, India, January 18-20, 2023. (<b>Best Paper Award</b>).
+
+              <button class="abstract-toggle" onclick="toggleAbstract(this)">▼ Abstract</button>
+              <div class="abstract-text">
+                <p>
+                 We present the problem of finding a maximal independent set (MIS) (named as <em>MIS Filling problem</em>) of an arbitrary connected graph with luminous myopic mobile robots. The robots enter the graph one after another from a particular vertex called the <em>Door</em> and move along the edges of the graph without collision to occupy vertices such that the set of occupied vertices forms a maximal independent set. 
+
+                This paper explores two versions of the <em>MIS filling problem</em>. For the <em>MIS Filling with Single Door</em> case,  our IND algorithm forms an MIS of size $m$ in $O(m^2)$ epochs under an asynchronous scheduler, where an epoch is the smallest time interval in which each participating robot gets activated and executes the algorithm at least once.
+                The robots have three hops of visibility range, $\Delta + 8$ number of colors, and $O(\log \Delta)$ bits of persistent storage, where $\Delta$ is the maximum degree of the graph. For the <em>MIS Filling with Multiple Doors</em> case, our MULTIND algorithm forms an MIS in $O(m^2)$ epochs under a semi-synchronous scheduler using robots with five hops of visibility range, $\Delta + k + 7$ number of colors, and $O(\log (\Delta + k))$ bits of persistent storage, where $k$ is the number of doors. </p>
+              </div>
           </div>
         </div>
           
@@ -445,8 +486,14 @@
               <a href="https://dl.acm.org/doi/abs/10.1145/3569551.3569553" style="color: teal; text-decoration: italic; display: block; margin-bottom: 20px;">
                   <em>Asynchronous Line Formation in Presence of Faulty Robots</em>
               </a>
-              Subhajit Pramanick, Gurram Joseph Spourgeon, Kritika Raj, and Partha Sarathi Mandal.<br><br>
-              9th International Conference on Networking, Systems and Security (<b>NSysS</b> 2022). ACM, Cox's Bazar, Bangladesh, pp. 60-64, December 20-22, 2022.
+              Subhajit Pramanick, Gurram Joseph Spourgeon, Kritika Raj, and Partha Sarathi Mandal.<br>
+              9th International Conference on Networking, Systems and Security (<b>NSysS</b> 2022). ACM, Cox's Bazar, Bangladesh, December 20-22, 2022.
+
+              <button class="abstract-toggle" onclick="toggleAbstract(this)">▼ Abstract</button>
+              <div class="abstract-text">
+                <p>
+                 In this paper, we study the line formation problem using $n$ oblivious point mobile robots located on distinct positions on the Euclidean plane. We assume that the robots agree on one coordinate axis. Robots operate in <em>Look-Compute-Move</em> (LCM) cycles and any two robots can see each other only if there is no robot present on the line segment joining them. Our aim is to solve the line formation problem even if some robots become faulty before achieving the goal. The robots cannot move anymore once they become faulty.  We present a fault-tolerant distributed algorithm for line formation under $y$-axis agreement which runs in $O(n)$ epochs in semi-synchronous setting. The same algorithm runs in $D/y_{min}$ epochs in asynchronous setting, where $D$ is the vertical distance between the farthest robots along the $y$-axis and $y_{min}$ is the minimum non-zero vertical distance traveled by a robot in each LCM cycle. </p>
+              </div>
           </div>
         </div>
           
