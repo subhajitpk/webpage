@@ -316,7 +316,7 @@
               <a href="https://doi.org/10.1016/j.tcs.2024.114723" style="color: teal; text-decoration: italic; display: block; margin-bottom: 20px;">
                   <em>Mutual Visibility of Luminous Robots Despite Angular Inaccuracy</em>
               </a>
-              <be>
+              <br>
               <p>  Subhajit Pramanick, Saswata Jana, Adri Bhattacharya, and Partha Sarathi Mandal.<br><br>
               Theoretical Computer Science (Elsevier), Vol 1011, 2024.
               </p>
@@ -336,8 +336,23 @@
               <a href="https://doi.org/10.1016/j.tcs.2024.114970" style="color: teal; text-decoration: italic; display: block; margin-bottom: 20px;">
                   <em>Fault-tolerant mutual visibility without any axis agreement in presence of mobility failure.</em>
               </a>
-              <br>Subhajit Pramanick, Saswata Jana, and Partha Sarathi Mandal.<br><br><br>
-              Theoretical Computer Science (Elsevier), Vol 1025, 2025.
+              <be>
+              <p>Subhajit Pramanick, Saswata Jana, and Partha Sarathi Mandal.<br><br><br>
+              Theoretical Computer Science (Elsevier), Vol 1025, 2025. </p>
+
+              <button class="abstract-toggle" onclick="toggleAbstract(this)">▼ Abstract</button>
+              <div class="abstract-text">
+                  <p> We aim to solve the mutual visibility problem using $N$ autonomous, indistinguishable, homogeneous, oblivious and opaque point robots in the presence of mobility failure.
+                        The faulty robot cannot move when it becomes faulty, but the light remains working. 
+                        Initially, from any arbitrary configuration, the problem of mutual visibility using robots aims to reach a configuration where any two robots can see each other. 
+                        The challenge is to reach to such a configuration in the presence of faulty robots along with obstructed visibility under which two robots see each other only if the line segment joining them does not have any robots.
+                        Every robot operates in the conventional <em>Look-Compute-Move</em> cycles. 
+                        Robots neither have any agreement in their coordinate system nor have the knowledge of $N$.  
+                        The problem is not solvable for a specific symmetric initial configuration of the robots.
+                        We propose an algorithm that tolerates $f~ (\leq N)$ number of faulty robots and uses a constant number of colors in the FSYNC setting.
+                        To be specific, the algorithm requires $21$ colors and runs in $O(N^2)$ synchronous rounds. 
+                        We present another algorithm much simpler than the prior one but can tolerate a single faulty robot. This algorithm needs only $2$ colors in the SSYNC and $5$ colors in the ASYNC setting.</p>
+              </div>
             </div>
           
           </div>
