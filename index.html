@@ -525,7 +525,7 @@
                 <li><h5 class="w3-opacity"><b>C Programming (B.Sc. Hons. Data Science and Artificial Intelligence) Nov-Jan 2023, IIT Guwahati.</b></h5>  </li>
                 <li><h5 class="w3-opacity"><b>C Programming (M.Sc Mathematics and Computing) Jul-Nov 2022, IIT Guwahati.</b></h5>  </li>
                 <li><h5 class="w3-opacity"><b>C Programming (M.Sc Mathematics and Computing) Jul-Nov 2021, IIT Guwahati.</b></h5>  </li>
-                <li><h5 class="w3-opacity"><b>Data Structure and Algorithm Lab (M.Sc Mathematics and Computing) Jan-May 2021, IIT Guwahati.</b></h5>  </li>
+                <li><h5 class="w3-opacity">MA 512: Data Structure and Algorithm Lab (for M.Sc Mathematics and Computing), Jan-May 2021, IIT Guwahati.</h5>  </li>
               </ul>
           </p>
           
@@ -594,11 +594,21 @@
 </footer>
 
 <script>
-      function toggleMobileMenu() {
-        const menu = document.getElementById("mobileMenu");
-        menu.classList.toggle("show");
-      }
-    </script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById("mobileMenu");
+    const icon = document.querySelector(".navbar .icon i");
+
+    menu.classList.toggle("show");
+
+    // Toggle between hamburger and close icon
+    if (menu.classList.contains("show")) {
+      icon.className = "fas fa-times";  // ✖ Close icon
+    } else {
+      icon.className = "fas fa-bars";   // ☰ Hamburger icon
+    }
+  }
+</script>
+
 
 </body>
 
