@@ -668,3 +668,56 @@ iframe {
 .abstract-text.show {
   padding: 10px;
 }
+
+
+
+
+
+
+/* Hides hamburger icon on desktop */
+.navbar .icon {
+  display: none;
+}
+
+/* Mobile menu container (collapsed by default) */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  padding: 10px;
+}
+
+.mobile-menu a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  /* Hide normal nav links */
+  .navbar a:not(.icon) {
+    display: none;
+  }
+
+  /* Show hamburger icon */
+  .navbar .icon {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+}
