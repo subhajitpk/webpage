@@ -730,9 +730,9 @@ iframe {
   .navbar .icon {
     display: block;
     margin-left: auto;
-    margin-right: 20px;
-    font-size: 28px;
-    color: white;
+    margin-right: 15px;
+    font-size: 22px;
+    color: teal;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 8px 12px;
     border-radius: 4px;
