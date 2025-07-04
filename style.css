@@ -697,16 +697,24 @@ iframe {
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
-  /* Hide desktop nav links */
+  /* Hide desktop links */
   .navbar a:not(.icon) {
     display: none !important;
   }
 
-  /* Show hamburger icon */
+  /* Show hamburger icon visibly */
   .navbar .icon {
-    background-color: rgba(0, 0, 0, 0.4); /* optional dark background */
-    padding: 6px 10px;
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);  /* visible on any background */
+    padding: 8px 12px;
     border-radius: 5px;
+    margin-left: auto;
+    margin-right: 20px;
+    position: relative; /* not absolute — keeps it visible */
+    z-index: 999;
   }
 
   /* Mobile dropdown menu */
@@ -715,6 +723,7 @@ iframe {
     flex-direction: column;
     background-color: #333;
     padding: 10px;
+    z-index: 998;
   }
 
   .mobile-menu a {
