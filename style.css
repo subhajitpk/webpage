@@ -704,13 +704,9 @@ iframe {
 
   /* Show hamburger icon */
   .navbar .icon {
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4); /* optional dark background */
+    padding: 6px 10px;
+    border-radius: 5px;
   }
 
   /* Mobile dropdown menu */
