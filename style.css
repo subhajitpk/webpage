@@ -697,9 +697,9 @@ iframe {
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
-  /* Hide normal nav links */
+  /* Hide desktop nav links */
   .navbar a:not(.icon) {
-    display: none;
+    display: none !important;
   }
 
   /* Show hamburger icon */
@@ -713,11 +713,24 @@ iframe {
     cursor: pointer;
   }
 
+  /* Mobile dropdown menu */
   .mobile-menu {
     display: none;
+    flex-direction: column;
+    background-color: #333;
+    padding: 10px;
+  }
+
+  .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    text-align: center;
   }
 
   .mobile-menu.show {
     display: flex;
   }
 }
+
