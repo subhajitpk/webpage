@@ -94,12 +94,7 @@
     </script>
 
 
-    <script>
-      function toggleMobileMenu() {
-        const menu = document.getElementById("mobileMenu");
-        menu.classList.toggle("show");
-      }
-    </script>
+    
 </head>
 <body class="w3-light-grey">
 
@@ -113,19 +108,20 @@
 
 <!-- Navigation Bar -->
 <div class="navbar">
-  <a href="#home" class="active">Home</a>
-  <!-- <a href="#favorite">Favorites</a> -->
-  <a href="#publications">Publications</a>
-  <a href="#teaching">Teaching</a>
-  <a href="#awards">Awards/Fellowships</a>
-  <a href="jetbot.html">NVIDIA-Jetbot</a>
-  <a href="#misc">Miscellaneous</a>
+  <a href="#home" class="nav-link">Home</a>
+  <a href="#publications" class="nav-link">Publications</a>
+  <a href="#teaching" class="nav-link">Teaching</a>
+  <a href="#awards" class="nav-link">Awards/Fellowships</a>
+  <a href="jetbot.html" class="nav-link">NVIDIA-Jetbot</a>
+  <a href="#misc" class="nav-link">Miscellaneous</a>
+
+  <!-- Hamburger Icon -->
   <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
 
-<!-- Mobile Menu (Hidden by Default) -->
+<!-- Mobile Dropdown Menu -->
 <div id="mobileMenu" class="mobile-menu">
   <a href="#home">Home</a>
   <a href="#publications">Publications</a>
@@ -597,7 +593,12 @@
 </div>
 </footer>
 
-
+<script>
+      function toggleMobileMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("show");
+      }
+    </script>
 
 </body>
 
