@@ -730,7 +730,7 @@ iframe {
   .navbar .icon {
     display: block;
     margin-left: auto;
-    margin-right: 15px;
+    margin-right: auto;
     font-size: 18px;
     color: teal;
     background-color: rgba(0, 0, 0, 0.4);
