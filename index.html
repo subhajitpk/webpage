@@ -92,6 +92,14 @@
         }
       }
     </script>
+
+
+    <script>
+      function toggleMobileMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("show");
+      }
+    </script>
 </head>
 <body class="w3-light-grey">
 
@@ -112,7 +120,19 @@
   <a href="#awards">Awards/Fellowships</a>
   <a href="jetbot.html">NVIDIA-Jetbot</a>
   <a href="#misc">Miscellaneous</a>
-  
+  <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!-- Mobile Menu (Hidden by Default) -->
+<div id="mobileMenu" class="mobile-menu">
+  <a href="#home">Home</a>
+  <a href="#publications">Publications</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#awards">Awards/Fellowships</a>
+  <a href="jetbot.html">NVIDIA-Jetbot</a>
+  <a href="#misc">Miscellaneous</a>
 </div>
 
 
