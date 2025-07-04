@@ -673,69 +673,70 @@ iframe {
 
 
 
+/* Default desktop navbar styling */
+.navbar {
+  overflow: hidden;
+  background: linear-gradient(to right, #4b79a1, #283e51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-/* Hides hamburger icon on desktop */
+.navbar a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  color: #1abc9c;
+}
+
 .navbar .icon {
   display: none;
 }
 
-/* Mobile menu container (collapsed by default) */
+/* Mobile menu dropdown (initially hidden) */
 .mobile-menu {
   display: none;
   flex-direction: column;
   background-color: #333;
-  padding: 10px;
 }
 
 .mobile-menu a {
-  padding: 10px;
   color: white;
   text-decoration: none;
+  padding: 12px;
+  border-bottom: 1px solid #444;
   text-align: center;
-  border-bottom: 1px solid #555;
 }
 
-/* Responsive adjustments */
+.mobile-menu.show {
+  display: flex;
+}
+
+/* Responsive toggle styles */
 @media screen and (max-width: 768px) {
-  /* Hide desktop links */
-  .navbar a:not(.icon) {
-    display: none !important;
+  .navbar a.nav-link {
+    display: none;
   }
 
-  /* Show hamburger icon visibly */
   .navbar .icon {
     display: block;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5);  /* visible on any background */
-    padding: 8px 12px;
-    border-radius: 5px;
     margin-left: auto;
     margin-right: 20px;
-    position: relative; /* not absolute — keeps it visible */
-    z-index: 999;
-  }
-
-  /* Mobile dropdown menu */
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    padding: 10px;
-    z-index: 998;
-  }
-
-  .mobile-menu a {
+    font-size: 28px;
     color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-bottom: 1px solid #555;
-    text-align: center;
-  }
-
-  .mobile-menu.show {
-    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 8px 12px;
+    border-radius: 4px;
   }
 }
+
 
