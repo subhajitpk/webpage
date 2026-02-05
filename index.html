@@ -436,6 +436,28 @@
         <div class="publication-container">
           <div class="publication-box">
             <a href="https://link.springer.com/chapter/10.1007/978-3-032-09120-8_10" style="color: teal; text-decoration: italic; display: block; margin-bottom: 20px;">
+                <em>Asynchronous Fault-tolerant Mutual Visibility</em>
+            </a>
+            Saswata Jana, Subhajit Pramanick, and Partha Sarathi Mandal.<br>
+            To appear in 33rd International Colloquium On Structural Information and Communication Complexity (<b>SIROCCO 2026</b>), June 9th – 11th, Durham, UK.
+
+            <button class="abstract-toggle" onclick="toggleAbstract(this)">▼ Abstract</button>
+              <div class="abstract-text">
+                <p>
+                 The mutual visibility problem requires a set of $N$ autonomous mobile robots to reach a configuration on the 2D plane where every pair of robots can see each other, i.e., no robot lies on the line segment connecting any two others. We study the <em>fault-tolerant mutual visibility problem</em> under the barebones luminous model (each robot has a light that can flash a color from a finite prefixed color set), where the objective is to reach a configuration in which every pair of non-faulty robots are mutually visible, despite the presence of at most $f (\le N)$ robots prone to mobility failures. Mobility fault is a fault model in the existing literature that makes a robot immobile. However, the faulty robot executes the algorithms and its light remains functional.
+Unlike existing studies that assume coordinate agreement or partial synchrony, we consider the asynchronous ASYNC setting and disoriented robots (do not share a coordinate system or orientation), with both $N$ and $f$ unknown.
+
+
+We propose a deterministic $O(N)$-time algorithm in terms of epochs that utilises $O(1)$ colors and ensures collision-free movements, where epoch is the smallest time interval in which every robot completes at least one full LCM cycle.
+In addition, our algorithm solves a useful subproblem of detecting the global innermost layer under asynchronous setting only with the help of local view of the robots.
+The layer structure of any robot configuration represented as a sequence of disjoint convex polygons, that offers a way to organize progress even without shared coordinate system.</p>
+              </div>
+          </div>
+        </div>
+
+        <div class="publication-container">
+          <div class="publication-box">
+            <a href="https://link.springer.com/chapter/10.1007/978-3-032-09120-8_10" style="color: teal; text-decoration: italic; display: block; margin-bottom: 20px;">
                 <em>Time-Optimal Asynchronous Minimal Vertex Covering by Myopic Robots on Graph</em>
             </a>
             Saswata Jana, Subhajit Pramanick, Adri Bhattacharya and Partha Sarathi Mandal.<br>
@@ -667,6 +689,7 @@
 
 
 </html>
+
 
 
 
