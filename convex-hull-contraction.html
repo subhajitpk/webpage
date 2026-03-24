@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Convex Hull Contraction Simulator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+  <script src="script.js"></script>
+  <style>
+  body {
+    margin: 0;
+    display: flex;
+    font-family: Arial;
+    background: #f0f0f0;
+  }
+
+  #controls {
+    width: 260px;
+    padding: 20px;
+    background: white;
+    box-shadow: 2px 0px 10px rgba(0,0,0,0.1);
+    height: 100vh;
+  }
+
+  #canvasContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #4a6cf7;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    background: #324acb;
+  }
+
+  input[type="number"],
+  input[type="range"] {
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+
+  <div id="controls">
+    <h2 style="margin-top:0;">Convex Hull Contraction</h2>
+    <p style="color:#666; font-size:14px;">
+      Mutual Visibility Simulator
+    </p>
+    <hr>
+
+    Robots:
+    <input type="number" id="robotCount" value="10" min="3" max="50">
+    <br><br>
+
+    Speed:
+    <input type="range" id="speedSlider" min="1" max="60" value="30">
+    <br><br>
+
+    <button onclick="startSim()">Start</button>
+    <button onclick="stopSim()">Stop</button>
+    <button onclick="resetSim()">Reset</button>
+
+
+    <br><br>
+<div style="font-size:13px; color:#666; line-height:1.4;">
+  <b><em>Notes:</em></b><br>
+  • This is an implementation of a simple algorithm that is based on contraction of the convex hull by moving the corner robots (while side robots and interior robots are stationary).<br>
+  • Each number next to a robot indicates the angle formed between that robot and its adjacent neighbors. At termination, none of the angles can be greater or equal to 180 degrees.<br>
+  • Termination occurs when all robots become corner of a (possibly) smaller convex hull, thereby achieving mutual visibility.<br>
+  • Scroll mouse wheel to zoom in/out.<br>
+  
+</div>
+  </div>
+
+  <div id="canvasContainer"></div>
+
+</body>
+</html>
