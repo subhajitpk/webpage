@@ -98,6 +98,17 @@
 </head>
 <body class="w3-light-grey">
 
+<div id="intro-overlay">
+  <div class="intro-content">
+    <div class="intro-image" id="introImage">
+      <img src="subhajit.jpg">
+    </div>
+    <div class="intro-text" id="introText">
+      Hi, I am Subhajit
+    </div>
+  </div>
+</div>
+
 <!-- Background Video -->
 <video autoplay muted loop class="video-background">
   <source src="swarm_robots.mp4" type="video/mp4">
@@ -153,7 +164,7 @@
     
       <div class="w3-white w3-text-grey w3-card-4">
           <div class="w3-display-container" style="text-align: center;">
-  <img src="subhajit.jpg" style="width:80%; margin-top: 40px; border-radius: 50%;" alt="Subhajit">
+  <img src="subhajit.jpg" id="realProfile" style="width:80%; margin-top: 40px; border-radius: 50%;" alt="Subhajit">
   <div class="w3-container">
     <h2 style="color: teal; margin-top: 10px;">Subhajit Pramanick</h2>  </div>
 
@@ -791,6 +802,47 @@ The layer structure of any robot configuration represented as a sequence of disj
   const lastModified = new Date(document.lastModified);
   document.getElementById("last-updated").textContent =
     lastModified.toDateString();
+</script>
+
+<script>
+window.addEventListener("load", () => {
+  const introImg = document.getElementById("introImage");
+  const text = document.getElementById("introText");
+  const overlay = document.getElementById("intro-overlay");
+  const realImg = document.getElementById("realProfile");
+
+  // Hide real image initially
+  realImg.style.visibility = "hidden";
+
+  // Show text
+  setTimeout(() => {
+    text.classList.add("show");
+  }, 500);
+
+  setTimeout(() => {
+  const rect = realImg.getBoundingClientRect();
+  const introRect = introImg.getBoundingClientRect();
+
+  const dx = rect.left + rect.width/2 - (introRect.left + introRect.width/2);
+  const dy = rect.top + rect.height/2 - (introRect.top + introRect.height/2);
+
+  const scale = rect.width / introRect.width;
+
+  introImg.style.transform = `
+    translate(-50%, -50%)
+    translate(${dx}px, ${dy}px)
+    scale(${scale})
+  `;
+}, 2000);
+
+  setTimeout(() => {
+    // Show real image
+    realImg.style.visibility = "visible";
+
+    // Hide overlay
+    overlay.classList.add("hide");
+  }, 3200);
+});
 </script>
 
 </body>
