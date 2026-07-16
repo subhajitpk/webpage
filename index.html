@@ -98,17 +98,6 @@
 </head>
 <body class="w3-light-grey">
 
-<div id="intro-overlay">
-  <div class="intro-content">
-    <div class="intro-image" id="introImage">
-      <img src="subhajit.jpg">
-    </div>
-    <div class="intro-text" id="introText">
-      Hi, I am Subhajit
-    </div>
-  </div>
-</div>
-
 <!-- Background Video -->
 <video autoplay muted loop class="video-background">
   <source src="swarm_robots.mp4" type="video/mp4">
@@ -164,7 +153,7 @@
     
       <div class="w3-white w3-text-grey w3-card-4">
           <div class="w3-display-container" style="text-align: center;">
-  <img src="subhajit.jpg" id="realProfile" style="width:80%; margin-top: 40px; border-radius: 50%;" alt="Subhajit">
+  <img src="subhajit.jpg" style="width:80%; margin-top: 40px; border-radius: 50%;" alt="Subhajit">
   <div class="w3-container">
     <h2 style="color: teal; margin-top: 10px;">Subhajit Pramanick</h2>  </div>
 
@@ -295,7 +284,7 @@
               Distributed Graph Algorithms, Local Verifications, Proof Labelings Schemes, Fault-tolerance, Algorithms for Mobile Robots.
             </h5>
             <br>
-            <p><h5 class="w3-opacity"><b>Local Verification with Labelings:</b> My current research focuses on locally checkable proofs and certifications in distributed systems, where nodes are given local advice (small pieces of information) intended to help verify global properties of large networks. The requirement is that when a network truly satisfies a given property, there exists some advice that is accepted everywhere, whereas if the property does not hold, any advice must be rejected by at least one node. This setting becomes even more challenging when the advice may be imperfect, pushing the study toward prediction-like models in which the information provided to nodes can contain errors. Our recent developments in this direction can be found on arXiv <a href="https://arxiv.org/abs/2603.20831" style="color: teal; text-decoration: bold;">here</a>.</h5> </p>
+            <p><h5 class="w3-opacity"><b>Local Verification with Labelings:</b> My current research focuses on locally checkable proofs and certifications in distributed systems, where nodes are given local advice (small pieces of information) intended to help verify global properties of large networks. The requirement is that when a network truly satisfies a given property, there exists some advice that is accepted everywhere, whereas if the property does not hold, any advice must be rejected by at least one node. This setting becomes even more challenging when the advice may be imperfect, pushing the study toward prediction-like models in which the information provided to nodes can contain errors. A further layer of difficulty arises when such verification must operate under strict bandwidth limitations, that is, in the CONGEST model of distributed computing, where every node can exchange only small messages with its neighbors in each round. Our recent developments in this direction can be found on arXiv <a class="arxiv-link" href="https://arxiv.org/abs/2603.20831" target="_blank">here</a> and <a class="arxiv-link" href="https://arxiv.org/abs/2607.09522" target="_blank">here</a>.</h5> </p>
 
             <p><h5 class="w3-opacity"><b>Algorithms for Mobile Robots/Agents:</b> In a complementary line of work, I study algorithmic problems involving mobile agents and mobile robots in graph-based and geometric environments. My focus is on core coordination tasks such as exploration, rendezvous, pattern formation, and filling, studied from a distributed and fault-tolerant perspective. This work seeks to understand how the underlying structure of the environment and the inherent complexity of the task influence the design and efficiency of coordination algorithms.</h5> </p>
             
@@ -332,39 +321,58 @@
         </div> -->
       </div>
 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Ph.D. in Computer Science</b></h5>
-          <p> Department of Mathematics, IIT Guwahati</p>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2024</h6>
-          <p></p>
-          <p><ul>
-                <li><strong>Thesis Title</strong> :  <a href="https://gyan.iitg.ac.in/items/bd16931f-b479-45a6-8683-913bfa76a656" style="color: teal; text-decoration: bold;">Distributed Algorithms to Solve MIS Filling, Mutual Visibility and Uniform Partitioning with Luminous Mobile Robots</a></li>
-                <li><strong>Supervisor</strong> : Prof. Partha Sarthi Mandal</li>
-                
-              </ul>
-          </p>
-          <hr>
+      <div class="w3-container w3-card w3-white edu-section">
+        <h2 class="edu-heading"><span class="edu-cap">🎓</span>Education &amp; Experience</h2>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <span class="timeline-date">2025 – Present</span>
+            <h3 class="timeline-title">Postdoctoral Researcher</h3>
+            <p class="timeline-sub">Institute of Computer Science, University of Wrocław, Poland</p>
+            <ul class="timeline-list">
+              <li>Working with <a href="https://sites.google.com/cs.uni.wroc.pl/tju/homepage?authuser=0" target="_blank">Prof. Tomasz Jurdziński</a></li>
+              <li>Grant OPUS 20 (UMO-2020/39/B/ST6/03208) — Models of distributed and parallel algorithms for large and dynamic data</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">Oct 2024 – Mar 2025</span>
+            <h3 class="timeline-title">Visiting Scientist</h3>
+            <p class="timeline-sub">Indian Statistical Institute, Kolkata</p>
+            <ul class="timeline-list">
+              <li>Worked with <a href="https://sites.google.com/site/mollaanisurrahaman/" target="_blank">Dr. Anisur Rahaman Molla</a></li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">2018 – 2024</span>
+            <h3 class="timeline-title">Ph.D. in Computer Science</h3>
+            <p class="timeline-sub">Department of Mathematics, IIT Guwahati</p>
+            <ul class="timeline-list">
+              <li>Supervisor: <a href="https://fac.iitg.ac.in/psm/" target="_blank">Prof. Partha Sarathi Mandal</a></li>
+              <li>Completed: 27 September 2024</li>
+              <li>Thesis: <a href="https://gyan.iitg.ac.in/items/bd16931f-b479-45a6-8683-913bfa76a656" target="_blank"><em>Distributed Algorithms to Solve MIS Filling, Mutual Visibility and Uniform Partitioning with Luminous Mobile Robots</em></a></li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">2015 – 2017</span>
+            <h3 class="timeline-title">M.Sc. in Mathematics and Computing</h3>
+            <p class="timeline-sub">Department of Mathematics, IIT Guwahati</p>
+            <ul class="timeline-list">
+              <li>Supervisor: Prof. Kalpesh Kapoor</li>
+              <li>Project: <em>On Del-Robust and Ins-Robust Words</em> — Study of robustness of words under insertion and deletion of symbols</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">2011 – 2015</span>
+            <h3 class="timeline-title">B.Sc. in Mathematics</h3>
+            <p class="timeline-sub">Scottish Church College, Kolkata — University of Calcutta</p>
+          </div>
+
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>M.Sc. in Mathematics and Computing</b></h5>
-          <p> Department of Mathematics, IIT Guwahati</p>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2017</h6>
-          <p>
-            <ul>
-            <li> <strong>M.Sc. Project Title:</strong> On Del-Robust and Ins-Robust Words</li>
-            <li> <strong>Supervisor:</strong> Prof. Kalpesh Kapoor</li>
-          </ul>
-          </p>
-          <!-- <hr> -->
-          <br>
-        </div>
-        <!-- <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelor Degree</p><br>
-        </div> -->
       </div>
 
       <div id="publications" class="w3-container w3-card w3-white w3-margin-bottom">
@@ -647,9 +655,9 @@ The layer structure of any robot configuration represented as a sequence of disj
     <div class="publication-container">
       <div class="publication-box">
 
-        <a href="https://arxiv.org/abs/2603.20831" target="_blank"
+        <a href="https://arxiv.org/abs/2607.09522" target="_blank"
            style="color: teal; text-decoration: italic; display: block; margin-bottom: 20px;">
-          <em>Error-resilient Distributed Local Verification</em>
+          <em>Short Graph Sketches Suffice for Error-resilient Leader Verification in CONGEST</em>
         </a>
 
         Paweł Garncarek, Tomasz Jurdziński, Dariusz Kowalski, Subhajit Pramanick.<br>
@@ -658,9 +666,30 @@ The layer structure of any robot configuration represented as a sequence of disj
         <button class="abstract-toggle" onclick="toggleAbstract(this)">▼ Abstract</button>
         <div class="abstract-text">
           <p>
-            We study verification (decision) problems for graph properties in distributed networks under the locally checkable labeling framework, where nodes use labels (proofs) and local neighborhoods to decide acceptance or rejection.
-            Our focus is twofold. First, we study cycle detection. While it is known that this can be verified using 3 labels with access to the 1-hop neighborhood, we introduce a novel gadget that encodes direction along a path using only 2 labels and access to a 3-hop neighborhood. This yields a cycle-detection labeling scheme with just 2 labels and may be of independent interest.
-            Second, we consider adversarially corrupted labelings, where each node has access to a local neighborhood within which a fraction of nodes may receive erroneous labels. We introduce a general algorithmic framework, called refix, that transforms a base verification algorithm for a property P operating on labels within a d-hop neighborhood into one that tolerates up to i erroneous labels within a radius d+2i, by accessing a d+2i-hop neighborhood. We demonstrate applications to cycle detection, cycle absence, and bipartiteness, and provide lower bounds relating the number of errors to the required neighborhood size.
+            Locally Checkable Proofs (LCPs) enable the verification of global graph properties using locally checkable certificates assigned by a prover. Recently, this framework was extended to Locally Checkable Proofs-with-Errors (LCPE), where an adversary may corrupt some certificates. Existing LCPE algorithms, however, are designed for the LOCAL model, whose unbounded communication makes them unsuitable for direct implementation in the bandwidth-restricted CONGEST model. We initiate the study of efficient CONGEST implementations of LCPE through the <em>unique-leader</em> verification problem on trees. The main challenge is that tolerating $\varepsilon$ certificate errors requires each node to reason about its $(2\varepsilon+1)$-hop neighborhood, whose exact topology may require up to $O(\Delta^{2\varepsilon+1}\log n)$ bits to communicate. To overcome this bottleneck, we introduce <em>local graph sketches</em>, together with the notions of <em>imagined trees</em> and <em>imagined certifications</em>, which encode precisely the information needed for verification using only $O(\varepsilon^2 \log n)$ bits per node. Based on these sketches, we design an LCPE algorithm that tolerates up to $\varepsilon$ adversarial certificate errors and constructs the required sketches in $O(\varepsilon^2)$ communication rounds in the CONGEST model. We complement our algorithm with a matching impossibility result: even in the strictly more powerful LOCAL model, and even with unbounded certificate size, no verification scheme with view distance at most $\varepsilon$ can tolerate $\varepsilon$ adversarial certificate errors. Since every CONGEST algorithm can be simulated in LOCAL, this lower bound immediately applies to CONGEST, showing that a view distance exceeding $\varepsilon$ is unavoidable.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="publication-container">
+      <div class="publication-box">
+
+        <a href="https://arxiv.org/abs/2603.20831" target="_blank"
+           style="color: teal; text-decoration: italic; display: block; margin-bottom: 20px;">
+          <em>Distributed Local Verification using Proofs with(out) Errors</em>
+        </a>
+
+        Paweł Garncarek, Tomasz Jurdziński, Dariusz Kowalski, Subhajit Pramanick.<br>
+        <b>arXiv</b>, 2026.
+
+        <button class="abstract-toggle" onclick="toggleAbstract(this)">▼ Abstract</button>
+        <div class="abstract-text">
+          <p>
+            We study local verification of graph properties in distributed networks under the framework of locally checkable proofs (LCPs). In an LCP, a prover assigns proof labels to nodes, and a distributed verifier must make all nodes accept if the graph satisfies the property, while at least one node rejects otherwise. Each node bases its decision on a local neighborhood, called its view distance.
+            Our focus is twofold. First, we study cycle existence, i.e., whether a graph contains a cycle (as opposed to cycle-freeness). We show that cycle existence admits verification with only 3 proof labels and view distance 1, and establish a matching lower bound. More importantly, inspired by direction-encoding techniques based on BFS distances, we introduce a novel gadget that encodes direction using only 2 labels and view distance 3 through repeated occurrences of the string 001101. Although developed for cycle existence, this gadget may be useful for other verification tasks.
+            Second, we introduce an erroneous proof model in which an adversary may corrupt proof labels of at most $i$ nodes within the $(2i+1)$-hop neighborhood of each node. We present an algorithmic framework, called <em>refix</em>, that transforms an error-free verifier into one that tolerates such errors at the cost of a view distance of $2i+1$. We demonstrate the framework on cycle existence, cycle-freeness, and bipartiteness, and establish lower bounds relating the number of errors to the required view distance. Finally, we show that our 2-label, view-distance-3 verifier for cycle existence admits a 3-round implementation in the CONGEST model, providing a first step toward implementing LCPs under communication constraints.
           </p>
         </div>
 
@@ -706,12 +735,12 @@ The layer structure of any robot configuration represented as a sequence of disj
             
             <ul style="font-size: 19px; line-height: 1.8;">
               <li>
-                <b style="color: teal;">Journals:</b> 
-                Distributed Computing, Theoretical Computer Science (TCS), Journal of Computer and System Sciences (JCSS), Measurement
+                <b style="color: teal;">Journals:</b>
+                Algorithmica, Distributed Computing, Theoretical Computer Science (TCS), Journal of Computer and System Sciences (JCSS), Measurement
               </li>
               <li>
-                <b style="color: teal;">Conferences:</b> 
-                SIROCCO 2026, DISC 2025, ICDCN 2026, SSS-2025, NETYS 2025, ANTS 2024, SSS 2024, WALCOM-2019
+                <b style="color: teal;">Conferences:</b>
+                ALGOWIN 2026, DISC 2026, SIROCCO 2026, DISC 2025, ICDCN 2026, SSS-2025, NETYS 2025, ANTS 2024, SSS 2024, WALCOM-2019
               </li>
             </ul>
         
@@ -802,47 +831,6 @@ The layer structure of any robot configuration represented as a sequence of disj
   const lastModified = new Date(document.lastModified);
   document.getElementById("last-updated").textContent =
     lastModified.toDateString();
-</script>
-
-<script>
-window.addEventListener("load", () => {
-  const introImg = document.getElementById("introImage");
-  const text = document.getElementById("introText");
-  const overlay = document.getElementById("intro-overlay");
-  const realImg = document.getElementById("realProfile");
-
-  // Hide real image initially
-  realImg.style.visibility = "hidden";
-
-  // Show text
-  setTimeout(() => {
-    text.classList.add("show");
-  }, 500);
-
-  setTimeout(() => {
-  const rect = realImg.getBoundingClientRect();
-  const introRect = introImg.getBoundingClientRect();
-
-  const dx = rect.left + rect.width/2 - (introRect.left + introRect.width/2);
-  const dy = rect.top + rect.height/2 - (introRect.top + introRect.height/2);
-
-  const scale = rect.width / introRect.width;
-
-  introImg.style.transform = `
-    translate(-50%, -50%)
-    translate(${dx}px, ${dy}px)
-    scale(${scale})
-  `;
-}, 2000);
-
-  setTimeout(() => {
-    // Show real image
-    realImg.style.visibility = "visible";
-
-    // Hide overlay
-    overlay.classList.add("hide");
-  }, 3200);
-});
 </script>
 
 </body>
